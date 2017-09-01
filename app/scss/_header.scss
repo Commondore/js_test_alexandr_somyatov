@@ -1,0 +1,22 @@
+.header {
+	padding: 2rem 0;
+}
+.logo {
+	@include col(.5)
+	font-family: Arial, sans-serif;
+	font-size: rem(22px);
+	font-weight: bold;
+	text-transform: uppercase;
+	color: $accent_color;
+
+	&__img, &__text {
+		display: inline-block;
+		vertical-align: middle;
+	}
+	&__text span{
+		color: #000;
+	}
+}
+.top-nav {
+	@include col(.5)
+}

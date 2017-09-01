@@ -1,0 +1,35 @@
+@include font-face("lime-icon", "../fonts/limeicon/limeicon", normal, $file-formats: eot woff2 woff svg ttf);
+@include font-face("opensans-regular", "../fonts/opensans-regular/opensans-regular", normal, $file-formats: eot woff2 woff svg ttf);
+@include font-face("proximanova-regular", "../fonts/proximanova-regular/proximanova-regular", normal, $file-formats: eot woff2 woff svg ttf);
+@include font-face("proximanova-semibold", "../fonts/proximanova-semibold/proximanova-semibold", normal, $file-formats: eot woff2 woff svg ttf);
+@include font-face("robotoslab-regular", "../fonts/robotoslab-regular/robotoslab-regular", normal, $file-formats: eot woff2 woff svg ttf);
+
+[class^="icon-"]:before, [class*=" icon-"]:before {
+	font-family: "lime-icon";
+	font-style: normal;
+	font-weight: normal;
+	speak: none;
+	 display: inline-block;
+	text-decoration: inherit;
+	width: 1em;
+	margin-right: .2em;
+	text-align: center;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1em;
+	margin-left: .2em;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+ 
+.icon-quote:before { content: '\e800'; }
+.icon-eye:before { content: '\e801'; }
+.icon-comment:before { content: '\e802'; }
+.icon-download:before { content: '\e803'; }
+.icon-menu:before { content: '\e804'; }
+.icon-home:before { content: '\e805'; }
+.icon-twitter:before { content: '\f099'; }
+.icon-facebook:before { content: '\f09a'; }
+.icon-angle-right:before { content: '\f105'; }
+.icon-pinterest:before { content: '\f231'; }
+.icon-gplus:before { content: '\f30f'; }

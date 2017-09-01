@@ -1,0 +1,23 @@
+{
+  "name": "pls98",
+  "description": "",
+  "main": "gulpfile.js",
+  "authors": [
+    "Alex Som"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "../libs_for_project/",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jeet": "^6.1.5",
+    "jquery": "^3.1.1",
+    "normalize-css": "normalize.css#^7.0.0"
+  }
+}

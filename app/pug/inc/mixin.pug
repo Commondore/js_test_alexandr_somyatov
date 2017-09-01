@@ -1,0 +1,45 @@
+mixin freebies(imgName, date, views, comment, download, heading, tags)
+	- var path = "upload/freebies/"
+
+	li.freebies__item
+		.freebie__imagebox
+			img.freebies__img(src=path + imgName, alt= heading)
+			.freebie__info
+				.freebie__info__date= date
+				.freebie__info__views
+					i.icon-eye
+					| #{views}
+				.freebie__info__comment
+					i.icon-comment
+					| #{comment}
+				.freebie__info__download
+					i.icon-download
+					| #{download}
+
+		.freebie__desc
+			h4.freebie__desc__heading= heading
+			.freebie__desc__tags= tags
+			.freebie__btn.btn.btn__rounded: .icon-angle-right
+
+mixin newsList(imgName, title, date, author, topic, text)
+	- var path = "upload/news/"
+	li.news__item
+		.news__imagebox
+			img.news__img(src=path + imgName, alt= title)
+		.news__desc
+			h3.news__title= title
+			.news__post-info
+				.post-info__publish-date= date
+				.post-info__author= author
+				.post-info__topic= topic
+
+			p.news__text= text
+
+			.news__more
+				i.icon-angle-right
+				| Read more
+
+mixin linkList(className, links, icons)
+	ul(class= className + "__list")
+		each link in links
+			li(class= className + "__item"): a(class= className + "__link", href="#") #{link}
