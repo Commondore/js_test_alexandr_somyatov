@@ -2,7 +2,7 @@
 	padding: 2rem 0;
 }
 .logo {
-	@include col(.5)
+	@include col(.5);
 	font-family: Arial, sans-serif;
 	font-size: rem(22px);
 	font-weight: bold;
