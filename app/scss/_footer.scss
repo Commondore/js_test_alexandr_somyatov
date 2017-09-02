@@ -4,7 +4,7 @@
 	font-size: rem(14px);
 	color: #555;
 }
-.bot-nav, .all-right {
+.bot-nav {
 	margin-top: .6rem;
 	text-align: center;
 }
@@ -32,7 +32,7 @@
 	}
 }
 .social {
-	margin: 2rem 0;
+	margin: 2rem 0 0;
 	text-align: center;
 }
 .social__list {
@@ -65,4 +65,7 @@
 	&:hover {
 		background: darken($accent_color, 5%);
 	}
+}
+.all-right {
+	margin-top: 2rem;
 }
