@@ -33,9 +33,21 @@
 		&:last-child{
 			margin-right: 0;
 		}
+
 	}
 	.top-nav__link {
 		color: #222;
+
+		&:hover {
+			color: $accent_color;
+			background: none;
+		}
+	}
+	.active {
+		.top-nav__link {
+			background: none;
+			color: $accent_color;
+		}
 	}
 	.top-nav__trigger {
 		display: none;
@@ -79,5 +91,14 @@
 	.shop-info,
 	.soc-widget {
 		@include col(.5);
+	}
+
+	.bot-nav, .social, .all-right {
+		@include col(4/12);
+		text-align: center;
+		margin-top: 0;
+	}
+	.bot-nav, .all-right {
+		margin-top: .6rem;
 	}
 }

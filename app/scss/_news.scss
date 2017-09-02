@@ -50,3 +50,12 @@
 		font-size: 18px;
 	}
 }
+.news__more__link {
+	text-decoration: none;
+	color: #222;
+	transition: .3s;
+
+	&:hover {
+		color: $accent_color;
+	}
+}
