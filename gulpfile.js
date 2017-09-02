@@ -74,7 +74,7 @@ gulp.task('css-production', function(){ // Создаем таск для css п
 	return gulp.src('app/scss/**/*.scss') // Берем источник
 		.pipe(sass({includePaths: require('node-bourbon').includePaths})) // Преобразуем Sass в CSS посредством gulp-sass
 		.pipe(autoprefixer(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true })) // Создаем префиксы
-		// .pipe(cssnano()) // Сжимаем
+		.pipe(cssnano()) // Сжимаем
 		// .pipe(rename({suffix: '.min'})) // Добавляем суффикс .min
 		.pipe(gulp.dest('app/css')) // Выгружаем результата в папку app/css
 	});
