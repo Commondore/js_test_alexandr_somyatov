@@ -7,7 +7,9 @@
 	padding: 0;
 }
 .news__item {
-	margin-bottom: 2rem;
+	margin-bottom: 4rem;
+
+	@include cf();
 
 	img {
 		width: 100%;

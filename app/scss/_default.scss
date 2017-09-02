@@ -35,6 +35,9 @@ img {
 	&:hover {
 		background: darken($accent_color, 10%);
 	}
+	.icon-angle-right {
+		font-size: 20px;
+	}
 }
 .heading-block {
 	margin: 3.3rem 0;

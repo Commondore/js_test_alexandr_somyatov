@@ -2,6 +2,14 @@
 	.freebies__item {
 		@include col(.5, $cycle:2);
 	}
+	.shop-info__imagebox {
+		margin-right: 1rem;
+		text-align: left;
+		float: left;
+		img {
+			width: auto;
+		}
+	}
 }
 
 @media screen and (min-width: 769px){
@@ -36,6 +44,15 @@
 	.feature__wrap {
 		@include col(.50, $gutter: 0);
 	}
+	.news__imagebox {
+		@include col(.32, $gutter: 4);
+	}
+	.news__desc {
+		@include col(.68, $gutter: 4);
+	}
+	.news__title {
+		margin: 0;
+	}
 }
 
 @media screen and (min-width: 961px){
@@ -58,5 +75,9 @@
 	}
 	.quote__text {
 		padding: 0 5rem;
+	}
+	.shop-info,
+	.soc-widget {
+		@include col(.5);
 	}
 }
