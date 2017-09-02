@@ -11,4 +11,11 @@ header.header
 				i
 				i
 				i
-			+linkList("top-nav", ["Home", "Blog", "Fonts", "Templates", "Icons", "Wordpress"])
+			//- +linkList("top-nav", ["Home", "Blog", "Fonts", "Templates", "Icons", "Wordpress"])
+			ul.top-nav__list
+				li.top-nav__item.active: a.top-nav__link(href="#"): i.icon-home
+				li.top-nav__item: a.top-nav__link(href="#") Blog
+				li.top-nav__item: a.top-nav__link(href="#") Fonts
+				li.top-nav__item: a.top-nav__link(href="#") Templates
+				li.top-nav__item: a.top-nav__link(href="#") Icons
+				li.top-nav__item: a.top-nav__link(href="#") Wordpress

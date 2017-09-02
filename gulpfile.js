@@ -99,9 +99,20 @@ gulp.task('img', function() {
 			use: [pngquant()]
 		})))
 		.pipe(gulp.dest('dist/images')); // Выгружаем на продакшен
-	});
+});
 
-gulp.task('build', ['clean', 'img', 'css-production', 'scripts'], function() {
+gulp.task('img-info', function() {
+	return gulp.src('app/upload/**/*') // Берем все изображения из app
+		.pipe(cache(imagemin({  // Сжимаем их с наилучшими настройками с учетом кеширования
+			interlaced: true,
+			progressive: true,
+			svgoPlugins: [{removeViewBox: false}],
+			use: [pngquant()]
+		})))
+		.pipe(gulp.dest('dist/upload')); // Выгружаем на продакшен
+});
+
+gulp.task('build', ['clean', 'img', 'img-info', 'css-production', 'scripts'], function() {
 
 	var buildCss = gulp.src([ // Переносим библиотеки в продакшен
 		'app/css/**.css'

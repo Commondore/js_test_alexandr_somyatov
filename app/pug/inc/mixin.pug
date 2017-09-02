@@ -20,7 +20,7 @@ mixin freebies(imgName, date, views, comment, download, heading, tags)
 		.freebie__desc
 			h4.freebie__desc__heading= heading
 			.freebie__desc__tags= tags
-			.freebie__btn: .icon-right-arrow
+			a(href="#").freebie__btn: .icon-right-arrow
 
 mixin newsList(imgName, title, date, author, topic, text)
 	- var path = "upload/news/"
@@ -37,8 +37,9 @@ mixin newsList(imgName, title, date, author, topic, text)
 			p.news__text= text
 
 			.news__more
-				i.icon-right-arrow-circular
-				|  Read more
+				a.news__more__link(href="#")
+					i.icon-right-arrow-circular
+					|  Read more
 
 mixin linkList(className, links, icons)
 	ul(class= className + "__list")

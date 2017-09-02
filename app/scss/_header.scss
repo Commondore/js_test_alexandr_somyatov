@@ -39,7 +39,10 @@
 	text-align: center;
 	list-style: none;
 }
-.top-nav__item {
+.active {
+	.top-nav__link {
+		background: darken($accent_color, 10%);
+	}
 }
 .top-nav__link {
 	display: block;
