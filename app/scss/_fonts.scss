@@ -12,12 +12,12 @@
 	 display: inline-block;
 	text-decoration: inherit;
 	width: 1em;
-	margin-right: .2em;
+	// margin-right: .2em;
 	text-align: center;
 	font-variant: normal;
 	text-transform: none;
 	line-height: 1em;
-	margin-left: .2em;
+	// margin-left: .2em;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
@@ -28,6 +28,8 @@
 .icon-download:before { content: '\e803'; }
 .icon-menu:before { content: '\e804'; }
 .icon-home:before { content: '\e805'; }
+.icon-right-arrow:before { content: '\e806'; }
+.icon-right-arrow-circular:before { content: '\e807'; }
 .icon-twitter:before { content: '\f099'; }
 .icon-facebook:before { content: '\f09a'; }
 .icon-angle-right:before { content: '\f105'; }

@@ -1,0 +1,33 @@
+.quote {
+	padding: 2rem 0;
+	background: #f1f1f1;
+	font-size: rem(26px);
+	color: #111;
+	text-align: center;
+}
+.quote__text {
+	position: relative;
+	padding: 0 3rem;
+
+	&:before, &:after {
+		position: absolute;
+		background: $accent_color;
+		font-family: "proximanova-regular", sans-serif;
+		font-size: 75px;
+		color: #fff;
+		width: 44px;
+		height: 44px;
+		text-shadow: 1px 1px 1px rgba(#000, .2);
+		border-radius: 50%;
+	}
+	&:before {
+		top: 5px;
+		left: 0;
+		content: '\201c';
+	}
+	&:after {
+		right: 0;
+		bottom: 5px;
+		content: '\201d';
+	}
+}

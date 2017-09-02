@@ -1,0 +1,62 @@
+@media screen and (min-width: 481px){
+	.freebies__item {
+		@include col(.5, $cycle:2);
+	}
+}
+
+@media screen and (min-width: 769px){
+	.logo{
+		@include col(.3);
+	}
+	.top-nav {
+		@include col(.7);
+	}
+	.top-nav__list {
+		display: block;
+		position: relative;
+		padding: .5rem 0;
+		background: #fff;
+		text-align: right;
+	}
+	.top-nav__item {
+		display: inline-block;
+		margin-right: rem(40px);
+
+		&:last-child{
+			margin-right: 0;
+		}
+	}
+	.top-nav__link {
+		color: #222;
+	}
+	.top-nav__trigger {
+		display: none;
+	}
+
+	.feature__wrap {
+		@include col(.50, $gutter: 0);
+	}
+}
+
+@media screen and (min-width: 961px){
+	.feature__wrap {
+		@include col(.32, $gutter: 0);
+	}
+
+	.freebies__item {
+		@include col(4/12, $uncycle: 2, $cycle:3);
+
+		&:hover {
+			.freebie__info {
+				bottom: 0;
+			}
+		}
+	}
+	.freebie__info {
+		bottom: -100%;
+		transition: .5s;
+	}
+	.quote__text {
+		padding: 0 5rem;
+	}
+}

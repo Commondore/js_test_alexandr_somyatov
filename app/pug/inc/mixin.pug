@@ -6,20 +6,21 @@ mixin freebies(imgName, date, views, comment, download, heading, tags)
 			img.freebies__img(src=path + imgName, alt= heading)
 			.freebie__info
 				.freebie__info__date= date
-				.freebie__info__views
-					i.icon-eye
-					| #{views}
-				.freebie__info__comment
-					i.icon-comment
-					| #{comment}
-				.freebie__info__download
-					i.icon-download
-					| #{download}
+				.freebie__info-counts
+					.freebie__info__views
+						i.icon-eye 
+						| #{views}
+					.freebie__info__comment
+						i.icon-comment 
+						| #{comment}
+					.freebie__info__download
+						i.icon-download 
+						| #{download}
 
 		.freebie__desc
 			h4.freebie__desc__heading= heading
 			.freebie__desc__tags= tags
-			.freebie__btn.btn.btn__rounded: .icon-angle-right
+			.freebie__btn: .icon-right-arrow
 
 mixin newsList(imgName, title, date, author, topic, text)
 	- var path = "upload/news/"
@@ -36,8 +37,8 @@ mixin newsList(imgName, title, date, author, topic, text)
 			p.news__text= text
 
 			.news__more
-				i.icon-angle-right
-				| Read more
+				i.icon-right-arrow-circular
+				|  Read more
 
 mixin linkList(className, links, icons)
 	ul(class= className + "__list")

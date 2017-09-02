@@ -1,10 +1,15 @@
 .header {
+	position: relative;
 	padding: 2rem 0;
+	margin-bottom: 1rem;
+
+	@include cf();
 }
 .logo {
-	@include col(.5);
+	@include col(.7);
 	font-family: Arial, sans-serif;
 	font-size: rem(22px);
+	letter-spacing: 2px;
 	font-weight: bold;
 	text-transform: uppercase;
 	color: $accent_color;
@@ -18,5 +23,37 @@
 	}
 }
 .top-nav {
-	@include col(.5)
+	text-align: right;
+	vertical-align: middle;
+	font-family: "robotoslab-regular", sans-serif;
+}
+.top-nav__list {
+	display: none;
+	position: absolute;
+	margin-top: -.5rem;
+	padding: 1.5rem 0;
+	top: 100%;
+	background: darken($accent_color, 5%);
+	width: 100%;
+	left: 0;
+	text-align: center;
+	list-style: none;
+}
+.top-nav__item {
+}
+.top-nav__link {
+	display: block;
+	padding: .5rem 0;
+	// margin-bottom: .5rem;
+	text-decoration: none;
+	color: #fff;
+	transition: .5s;
+
+	&:hover {
+		background: darken($accent_color, 10%);
+	}
+}
+.top-nav__trigger {
+	font-size: rem(32px);
+	text-decoration: none;
 }

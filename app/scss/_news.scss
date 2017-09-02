@@ -1,0 +1,50 @@
+.news {
+	padding: 2rem 0;
+}
+.news__list {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+.news__item {
+	margin-bottom: 2rem;
+
+	img {
+		width: 100%;
+	}
+}
+.news__title {
+	margin: .5rem 0 0;
+	font-family: "robotoslab-regular", sans-serif;
+	font-size: rem(26px);
+}
+.news__post-info {
+	margin-bottom: 2rem;
+	font-size: rem(12px);
+	color: #aaa;
+
+	> div {
+		display: inline-block;
+		margin-right: 5px;
+
+		&:before {
+			content: '';
+			display: inline-block;
+			margin-right: 5px;
+			background: $accent_color;
+			width: 5px;
+			height: 5px;
+			vertical-align: middle;
+			border-radius: 50%;
+		}
+
+		&:first-child:before {
+			display: none;
+		}
+	}
+}
+.news__more {
+	.icon-right-arrow-circular {
+		font-size: 18px;
+	}
+}

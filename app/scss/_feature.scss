@@ -1,0 +1,32 @@
+.feature {
+	padding: 2rem 0 4rem;
+	background: url("../images/feature_bg.jpg") no-repeat center 30%;
+	background-size: cover;
+}
+.feature__wrap {
+	// @include col(.32, $gutter: 0);
+}
+.feature__heading {
+	font-family: "robotoslab-regular", sans-serif;
+	font-size: rem(34px);
+	text-transform: capitalize;
+}
+.feature__desc {
+	margin-bottom: 2rem;
+}
+.subcribe__text {
+	margin-bottom: 1rem;
+}
+.subcribe__inputbox {
+	padding: .5rem;
+	border: 1px solid #dadada;
+	color: #aaa;
+	max-width: 160px;
+}
+.subcribe__btn {
+	background: darken($accent_color, 5%);
+
+	&:hover {
+		background: $accent_color;
+	}
+}
